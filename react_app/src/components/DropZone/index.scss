@@ -1,0 +1,60 @@
+.file-drop {
+  width: 386px;
+  height: 347px;
+  border: 3px dashed #D8D6DE;
+
+  &-target {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__image {
+    margin-bottom: 25px;
+
+  }
+
+  &__text {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: #29272C;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    background: linear-gradient(97.1deg, #00EFE6 0%, #00EB90 100%);
+    border-radius: 5px;
+    height: 40px;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 23px;
+    cursor: pointer;
+    
+    &--selected {
+      border: 2px solid #00EB90;
+      color: #00EB90;
+      background: transparent;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  &__selected {
+    background-color: #FAFAFA;
+  }
+}

@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.container {
+  max-width: 1054px;
+  padding: 0 20px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}

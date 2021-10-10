@@ -1,0 +1,18 @@
+.result {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  
+  &__values {
+    font-family: "Nunito";
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #29272c;
+    margin-bottom: 15px;
+  }
+}

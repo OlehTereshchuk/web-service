@@ -1,0 +1,76 @@
+.sidemenu {
+  padding-top: 32px;
+
+  img {
+    cursor: pointer;
+  }
+
+  &__overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(41, 39, 44, 0.7);
+    cursor: pointer;
+    animation-name: fade-in;
+    animation-duration: 0.3s;
+  }
+
+  &__wrapper {
+    width: 50vw;
+    min-width: 620px;
+    height: 100vh;
+    position: relative;
+    cursor: initial;
+    animation-name: slide-open;
+    animation-duration: 0.3s;
+    background: #FAFAFA;
+  }
+
+  &__cross {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+}
+
+@keyframes slide-open {
+  0% {
+    left: -50vw;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-close {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -50vw;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: rgba(41, 39, 44, 0.7);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    background-color: rgba(41, 39, 44, 0.7);
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}

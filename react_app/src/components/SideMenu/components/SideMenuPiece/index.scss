@@ -1,0 +1,100 @@
+.piece {
+  box-sizing: border-box;
+  height: 256px;
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(41, 39, 44, 0.12);
+  border-radius: 40px;
+  cursor: pointer;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s;
+
+  &:hover {
+    .piece__title {
+      color: #00eb90;
+    }
+  }
+
+  &:nth-child(1) {
+    &:hover {
+      transform: translate(-28px, -28px);
+    }
+
+    .piece__circle {
+      border-radius: 116px 0 0 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(110deg, #00efe6 0%, #00eb90 100%);
+    }
+  }
+
+  &:nth-child(2) {
+    &:hover {
+      transform: translate(28px, -28px);
+    }
+
+    .piece__circle {
+      border-radius: 0 116px 0 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(220deg, #00efe6 0%, #00eb90 100%);
+    }
+  }
+
+  &:nth-child(3) {
+    justify-content: flex-end;
+
+    &:hover {
+      transform: translate(-28px, 28px);
+    }
+
+    .piece__circle {
+      border-radius: 0 0 0 116px;
+      top: 0;
+      right: 0;
+      background: linear-gradient(70deg, #00efe6 0%, #00eb90 100%);
+    }
+  }
+
+  &:nth-child(4) {
+    justify-content: flex-end;
+
+    &:hover {
+      transform: translate(28px, 28px);
+    }
+    .piece__circle {
+      border-radius: 0 0 116px 0;
+      top: 0;
+      left: 0;
+      background: linear-gradient(320deg, #00efe6 0%, #00eb90 100%);
+    }
+  }
+
+  &__name {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #6b6b6b;
+  }
+
+  &__title {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #29272c;
+    margin-top: 10px;
+    transition: color 0.4s;
+  }
+
+  &__circle {
+    width: 116px;
+    height: 116px;
+    position: absolute;
+  }
+}

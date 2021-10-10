@@ -1,0 +1,88 @@
+.homepage {
+  padding-top: 84px;
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    font-family: "Nunito";
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #29272c;
+    margin-bottom: 25px;
+
+    &-wrapper {
+      max-width: 500px;
+    }
+  }
+
+  &__text {
+    font-family: "Gothic A1", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: #6b6b6b;
+  }
+
+  &__options {
+    font-family: "Gothic A1";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #29272c;
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+
+    span {
+      margin-bottom: 28px;
+    }
+
+    label {
+      font-size: 16px;
+      line-height: 20px;
+      margin-left: 9px;
+    }
+
+    p {
+      font-family: "Gothic A1";
+      font-size: 16px;
+      line-height: 20px;
+      color: #6b6b6b;
+      width: 375px;
+      margin-left: 22px;
+    }
+  }
+
+  &__option {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 23px;
+    }
+  }
+
+  &__button {
+    height: 40px;
+    padding: 0 47px;
+    background: linear-gradient(97.1deg, #00efe6 0%, #00eb90 100%);
+    border-radius: 5px;
+    font-family: "Nunito";
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+}
